@@ -18,9 +18,9 @@ case "$Type" in
     result="Unknown" ;;
 esac
 
-echo "$result version"
-
+echo "$result Version:"
 printf `defaults read /Applications/Firefox.app/Contents/Info CFBundleShortVersionString` && echo
+
 printf 'Chrome Version:' && echo
 printf `defaults read /Applications/Google\ Chrome.app/Contents/Info CFBundleShortVersionString` && echo
 printf 'Safari Version:' && echo
