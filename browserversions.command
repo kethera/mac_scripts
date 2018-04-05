@@ -28,18 +28,18 @@ if [ -e /Applications/Firefox.app ]
 		printf "$result found.\n\tVersion: $ffxversion\n\n"
 	
 	else
-		echo "Firefox not found in /Applications/ -- moving on...\n"
+		printf "Firefox not found in /Applications/ -- moving on...\n\n"
 fi
 }
 
 get_chrome_version()
 {
-if [ -e /Applications/Firefox.app ]
+if [ -e /Applications/Google\ Chrome.app ]
 	then
 		chromeversion=`defaults read /Applications/Google\ Chrome.app/Contents/Info CFBundleShortVersionString`
 		printf "Chrome found.\n\tVersion: $chromeversion\n\n"
 	else
-		printf "Chrome not found in /Applications/ -- moving on...\n"
+		printf "Chrome not found in /Applications/ -- moving on...\n\n"
 fi	
 }
 
@@ -50,7 +50,7 @@ if [ -e /Applications/Safari.app ]
 		safariversion=`defaults read /Applications/Safari.app/Contents/Info CFBundleShortVersionString`
 		printf "Safari found.\n\tVersion: $safariversion\n\n"
 	else
-		printf "Safari not found in /Applications/ -- moving on...\n"
+		printf "Safari not found in /Applications/ -- moving on...\n\n"
 fi
 }
 
@@ -61,7 +61,7 @@ if [ -e /Applications/Opera.app ]
 		operaversion=`defaults read /Applications/Opera.app/Contents/Info CFBundleShortVersionString`
 		printf "Opera found.\n\tVersion: $operaversion\n\n"
 	else
-		printf "Opera not found in /Applications/ -- moving on...\n"
+		printf "Opera not found in /Applications/ -- moving on...\n\n"
 fi
 }
 
@@ -72,4 +72,4 @@ get_firefox_version
 get_chrome_version
 get_safari_version
 get_opera_version
-printf "\n\nFinished\n\n"
+printf "Finished\n\n"
