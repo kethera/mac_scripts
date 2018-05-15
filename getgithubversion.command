@@ -1,4 +1,4 @@
-#usr/bin/sh env bash
+#!/usr/bin/env bash
 
 if [ -e /Applications/GitHub\ Desktop.app ] && [ -e /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang ]
 	then
