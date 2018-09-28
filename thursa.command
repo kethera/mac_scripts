@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 # Project Thursa: HD Radio Player wrapper using existing scripts from github:
-# uses nrsc5 <URL HERE>
+# uses nrsc5 https://github.com/theori-io/nrsc5
 #
 # example nrsc command: nrsc5 89.7 1
 #
-# uses mvp <URL HERE>
-#
-# example nrsc command with mvp: nrsc5 -o - -q -f adts 89.7 1 | mpv - --audio-samplerate=48000 -af lavfi='extrastereo'
+# uses examples from https://freetime.mikeconnelly.com/archives/5052
+# such as the example nrsc command with mvp: nrsc5 -o - -q -f adts 89.7 1 | mpv - --audio-samplerate=48000 -af lavfi='extrastereo'
 #
 # Created 28 Sep 2018 by Veronica Goralski
 # Massachusetts, USA
