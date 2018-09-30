@@ -5,15 +5,15 @@
 # example nrsc command: nrsc5 89.7 1
 #
 # uses examples from https://freetime.mikeconnelly.com/archives/5052
-# such as the example nrsc command with mvp: nrsc5 -o - -q -f adts 89.7 1 | mpv - --audio-samplerate=48000 -af lavfi='extrastereo'
+# such as the example nrsc command with mpv: nrsc5 -o - -q -f adts 89.7 1 | mpv - --audio-samplerate=48000 -af lavfi='extrastereo'
 #
 # Created 28 Sep 2018 by Veronica Goralski
 # Massachusetts, USA
 #
-# Last edited: 28 Sep 2018
+# Last edited: 30 Sep 2018
 #
 # future ideas: display metadata, keep a running buffer, add DVR-style transport controls
-# for live and recorded audio, save to file, etc., RSSS
+# for live and recorded audio, save to file, etc., RSSI indicator,
 #
 
 #Function definitions:
