@@ -60,7 +60,7 @@ main()
 	case $plain_or_dsp in
 		[pP] ) play_plain
 		;;
-		[sS] ) clear;printf "\n\nthursa is now playing $freq HD-$prog_int with DSP...\n\n\n";play_processed &> /dev/null
+		[sS] ) clear;printf "\n\nthursa is now playing $freq-FM HD-$prog_int with DSP...\n\n\n";play_processed &> /dev/null
 		;;
 		*) printf '\n\ninvalid input\n'
 		;;
